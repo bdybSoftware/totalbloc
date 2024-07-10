@@ -13,10 +13,10 @@ class TodoStateFetchLoading extends TodoState {}
 
 class TodoStateLoaded extends TodoState {
   final List<Todo> fetchedTodos;
-  TodoStateLoaded({required this.fetchedTodos});
+  const TodoStateLoaded({required this.fetchedTodos});
 
   @override
-  List<Object> get props => [];
+  List<Object> get props => [fetchedTodos];
 }
 
 abstract class TodoStateAction extends TodoState {}

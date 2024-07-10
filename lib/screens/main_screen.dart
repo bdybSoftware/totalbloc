@@ -13,7 +13,7 @@ class MainScreen extends StatelessWidget {
           title: const Text("TotalBloc"),
         ),
         resizeToAvoidBottomInset: false,
-        body: Column(
+        body: const Column(
           children: [
             Flexible(
               fit: FlexFit.loose,

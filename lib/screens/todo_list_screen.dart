@@ -24,8 +24,8 @@ class _TodoListScreenState extends State<TodoListScreen> {
       physics: NeverScrollableScrollPhysics(),
       child: BlocConsumer<TodoBloc, TodoState>(
           bloc: todoBloc,
-          buildWhen: (previous, current) => current is TodoStateAction,
-          listenWhen: (previous, current) => current is! TodoStateAction,
+          // buildWhen: (previous, current) => current is TodoStateAction,
+          // listenWhen: (previous, current) => current is! TodoStateAction,
           listener: (context, state) {},
           builder: (context, state) {
             print("todo_list_screen.dart, state is ${state.runtimeType}");
